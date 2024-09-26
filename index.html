@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox opdracht: Positioneren</title>
+    <link rel="stylesheet" href="styles/do-not-edit.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<!-- O P D R A C H T  1 -->
+<h3>Opdracht 1</h3>
+<img src="assets/images/opdracht-1-eindresultaat.jpg" alt="opdracht-1 voorbeeld">
+<section class="opdracht-1">
+    <ul>
+        <li>Home</li>
+        <li>Products</li>
+        <li>About us</li>
+        <li>Contact</li>
+    </ul>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
+const listItems = document.querySelectorAll('.opdracht-1 li');
+listItems.forEach(listItem => {
+  listItem.style.display = 'flex';
+  listItem.style.justifyContent = 'center';
+  listItem.style.alignItems = 'center';
+  listItem.style.width = '100px';
+  listItem.style.height = '50px';
+  listItem.style.margin = '10px';
+  listItem.style.border = '1px solid black';
+});
